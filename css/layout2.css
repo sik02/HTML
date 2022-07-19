@@ -26,4 +26,19 @@
     float: left;
 }
 
+.navbar li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* selector 문법 > 안에 있는 직계자식  공백은 안에 있는 모든 자식*/
+
+.navbar a{
+    font-size: 26px;
+    text-decoration: none; /* 하이퍼링크 밑줄 제거 */
+}
 

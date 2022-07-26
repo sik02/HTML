@@ -1,0 +1,7 @@
+뼈와 살을 분리하는 CSS 작성방식을 Object Oriented CSS
+
+BEM 룰을 쉽게 외우려면
+
+Block__Element--Modifer 이런 식으로 기억해주시면 됩니다.
+
+HTML 요소를 영어로 Element라고 하며 Modifier는 수식어라는 뜻입니다. 

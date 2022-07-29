@@ -1,7 +1,27 @@
 뼈와 살을 분리하는 CSS 작성방식을 Object Oriented CSS
+main-btn에서 bg만 다르고 나머지 속성이 같다면 bg-red, bg-blue를 만들고
+main-btn클래스와 bg-red클래스 두개를 줌으로써 나눠서 사용할 수 있음
+흔히 utility class라 하며 많이 만들어두면 스타일링이 편해짐
 
-BEM 룰을 쉽게 외우려면
+BEM 
+Block__Element--Modifer 
+큰 틀부터 시작해서 세부 요소로 나아가면서 작명하는 방법
 
-Block__Element--Modifer 이런 식으로 기억해주시면 됩니다.
+폰트파일 호스팅해주는 google fonts 사이트
 
-HTML 요소를 영어로 Element라고 하며 Modifier는 수식어라는 뜻입니다. 
+가로 배치할 div태그의 부모태그한테 display: flex 부여시 가로 정렬 쉽게함
+justify-content사용해서 가로 정렬 쉽게 가능
+flex-direction으로 세로 정렬 쉽게 가능
+flex-wrap으로 크기가 벗어나는 요소들 아래로 보낼 수 있음
+align-items로 상하정렬 가능
+flex-grow로 배율로 요소 크기 지정 가능
+
+반응형 웹
+width: 100vw 브라우저 폭에 비례해서 설정 (view port), vh도 같음
+rem : html태그폰트사이즈의 배수 (기본 16px)
+
+<meta name="viewport" content="width=device-width, inital-scale=1.0">
+media query 문법 사용해서 화면 크기에 따라 다른 사이즈 설정 가능
+
+font Awesome 라이브러리
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">

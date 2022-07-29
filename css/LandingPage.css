@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+
+.main-background{
+    width: 100%;
+    height: 500px;
+    background-color: #79abe3;
+    /* background-image: url(../image/phone.png); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat;
+    background-position: right; */
+    padding: 1px;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.main-title{
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.main-image{
+    width: 25%;
+}
+
+.main-button{
+
+}

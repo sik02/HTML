@@ -20,9 +20,48 @@ flex-grow로 배율로 요소 크기 지정 가능
 width: 100vw 브라우저 폭에 비례해서 설정 (view port), vh도 같음
 rem : html태그폰트사이즈의 배수 (기본 16px)
 
+아래 태그 사용해야 반응형 제작시 똑바로 작동함
 <meta name="viewport" content="width=device-width, inital-scale=1.0">
 media query 문법 사용해서 화면 크기에 따라 다른 사이즈 설정 가능
 
 font Awesome 라이브러리
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+아이콘들 사용 가능
 
+LandingPage 학습
+body에 margin 0 여백 없애기 위해 쓰고 시작
+box-sizing: border-box 여백 테두리도크기에 포함시킴
+
+그라데이션 사용
+background-image: linear-gradient(to bottom, #eee, #aaa)
+바텀 방향으로 그라데이션 적용
+
+float left, right 사용해서 글자와 이미지 양쪽 div 나눠서 사용
+
+btn, btn-black으로 OOCSS활용해서 버튼 작성
+
+모바일 크기로 줄어들면 media 쿼리 사용해서 이미지 가운데 정렬
+display block이랑 float none 사용 (float right인 상태이므로)
+
+아이콘들 display flex후 width 조절해서 가운데 정렬로 맞춰넣음
+모바일 크기로 줄어들면 flex-direction column으로 세로정렬 width 100%조정
+
+포트폴리오 부분 div박스 4개를 float left 후 width 50% 설정해서
+가로 2열 세로 2열 정렬
+모바일에서는 float none으로 세로정렬
+
+포트폴리오 애니메이션은 부모태크에 relative주고 div하나 만들어서
+absolute 적용 후 z-index로 뒤로 보내놓고 마우스 올려놓을 시 테두리
+굵게 만들어서 애니메이션 적용 후 transtition 적용
+
+footer 아이콘은 display flex하고 justify-content center해서 가운데 정렬
+
+css덮어쓰기
+1. 같은 클래스명 하단에 쓰기
+2. 우선순위 높이기
+3. specificity 높이기
+
+1. 기존 css파일 아래에 css파일을 하나 새로 만들고 같은 클래스명으로 작성
+밑에 작성한게 우선으로 작동함
+2. id, style태그를 이용해서 우선순위를 높여도 됨, !important사용하면 가장 먼저 작동
+3. css 셀렉터 사용해서 div.main-background .custom등으로 점수를 높이면 먼저 작동

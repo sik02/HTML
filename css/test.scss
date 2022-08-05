@@ -1,0 +1,12 @@
+$메인컬러: #2a4cb2;
+$기본사이즈: 16px;
+
+.background{
+    background-color: $메인컬러;
+    font-size: $기본사이즈 - 2px;
+}
+
+.box{
+    color: #2a4cb2;
+    font-size: $기본사이즈 + 2px;
+}

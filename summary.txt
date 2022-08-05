@@ -65,3 +65,56 @@ css덮어쓰기
 밑에 작성한게 우선으로 작동함
 2. id, style태그를 이용해서 우선순위를 높여도 됨, !important사용하면 가장 먼저 작동
 3. css 셀렉터 사용해서 div.main-background .custom등으로 점수를 높이면 먼저 작동
+
+pseudo class
+:붙여서 특정 상태일때 스타일링 가능
+큰 예시로 hover
+
+pseudo element
+::붙여서 내부의 일부분만 스타일 줄때
+예시로 첫번째 글자 first-letter, line등
+after 내부 맨 뒤에 뭔가 추가할때 사용
+before 내부 맨 앞에 뭔가 추가할때 사용
+
+shadow Dom
+크롬 개발자도구에서 shadowDom을 체크해놓으면 숨겨진 속성을 볼수있음
+pseudo부분의 class명을 사용하면 수정 가능
+
+video
+자동재생 autoplay muted
+미리 다운로드 preload 
+none x, auto 다운로드, metadata 적당히 다운로드
+poster="경로" 썸네일 이미지
+
+audio
+muted 음소거 상태
+
+transform
+rotate(30deg) 회전
+translateX X축 좌표이동
+scale(2) 크기변화 2배
+
+@keyframes 애니메이션 정의
+animation-name 변수명
+animation-duration 1s 진행 속도
+animation-delay 딜레이양
+animation-iteration-count 반복횟수
+animation-fill-mode: forwards 애니메이션 끝났을때 상태 유지
+
+grid
+grid-template-columns, rows로 가로 세로 행 지정
+grid-gap으로 간격 설정
+grid-column: 1 / 5 세로선인 col 1~4만큼 차지
+grid-row: 2 / 4 가로선 row 2~4만큼 차지
+
+grid-area: 작명  이름 작성 가능
+grid-template-areas: 
+        "header header header header"
+        "sidebar . . ."
+        "sidebar . . ."
+
+position sticky
+
+
+
+
